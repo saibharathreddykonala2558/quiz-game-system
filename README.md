@@ -6,6 +6,16 @@ A console quiz game that loads questions from a text file, tracks your score, an
 
 [Play the C++ Quiz Game](https://saibharathreddykonala2558.github.io/quiz-game-system/)
 
+## Screenshots
+
+### C++ Console Game
+
+![C++ Quiz Game terminal](screenshots/terminal.png)
+
+### Browser Quiz
+
+![C++ Quiz Website](screenshots/website.png)
+
 ## Files
 
 - `quiz_game.cpp` - the full source code
