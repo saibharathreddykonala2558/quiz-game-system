@@ -1,0 +1,55 @@
+Which language is used to write this quiz?|C++|Python|Java|JavaScript|1
+What does OOP stand for?|Object Oriented Programming|Open Output Process|Online Operating Program|Ordered Object Protocol|1
+Which header is used for file input and output?|iostream|fstream|string|vector|2
+What is the correct way to declare a vector of integers?|vector<int> numbers;|int vector numbers;|vector numbers<int>;|numbers vector<int>;|1
+Which loop is best when the number of iterations is unknown?|for|while|switch|if|2
+What is the entry point function of every standard C++ program?|start()|main()|init()|run()|2
+Which operator cannot be overloaded in C++?|+|::|[]|()|2
+What does a destructor do when an object goes out of scope?|Allocates heap memory|Cleans up resources before object destruction|Overloads assignment operators|Initializes static members|2
+Which keyword is used to achieve runtime polymorphism in C++?|inline|virtual|register|explicit|2
+What is a pure virtual function in C++?|A virtual function initialized with `= 0`|A function declared inside a struct|A static member function|A function with default arguments|1
+Which C++11 smart pointer enforces exclusive ownership of a resource?|std::shared_ptr|std::weak_ptr|std::unique_ptr|std::auto_ptr|3
+Which smart pointer uses reference counting to share ownership across multiple owners?|std::unique_ptr|std::shared_ptr|std::auto_ptr|std::scoped_ptr|2
+What does `nullptr` represent in modern C++?|Zero integer value|A type-safe null pointer constant|An uninitialized reference|A dangling pointer|2
+How does a reference differ from a pointer in C++?|A reference can be reassigned after initialization|A reference cannot be null and must be initialized when declared|A reference requires `new` and `delete`|A pointer has no memory address|2
+Which STL container follows Last-In, First-Out (LIFO) ordering?|queue|stack|list|set|2
+Which STL container follows First-In, First-Out (FIFO) ordering?|stack|priority_queue|queue|map|3
+Which STL associative container stores unique elements in sorted order?|unordered_set|set|multiset|vector|2
+Which header provides `std::unique_ptr` and `std::shared_ptr`?|memory|utility|tuple|type_traits|1
+What is a template in C++?|A macro replaced by the preprocessor|A blueprint for generic functions or classes|A runtime dynamic array|A memory alignment directive|2
+Which keyword defines a generic function or class template?|generic|template|typename_def|blueprint|2
+What is a lambda expression in C++11?|An anonymous inline function object|A recursive template specialization|A multithreaded lock guard|A virtual base class|1
+What does the `auto` keyword do in modern C++?|Forces automatic heap allocation|Deduces a variable's type from its initializer at compile time|Makes a variable thread-safe|Declares an automatic destructor|2
+Which keyword is used to handle runtime errors in C++?|catch|try|throw|All of try, catch, and throw|4
+What happens if an exception is thrown and never caught anywhere?|The compiler ignores it|`std::terminate()` is called and the program aborts|The variable resets to zero|It converts into a warning|2
+Which keyword prevents implicit type conversions on single-argument constructors?|explicit|sealed|final|strict|1
+What does the `final` specifier do on a virtual function?|Makes it pure virtual|Prevents derived classes from overriding it|Converts it into a static function|Inlines it automatically|2
+What is function overloading?|Defining multiple functions with the same name but different parameter lists|Redefining a base class virtual function in a derived class|Calling a function inside itself|Passing functions as templates|1
+What is function overriding?|Defining two functions with identical names in the same scope|Redefining a virtual base class function in a derived class with the same signature|Overloading operators for user types|Inlining a loop body|2
+What is a copy constructor used for?|Destroying temporary objects|Initializing a new object as a copy of an existing object|Comparing two objects for equality|Reallocating static arrays|2
+What is a move constructor (C++11) designed to do?|Copy deep buffers byte-by-byte|Transfer resources from a temporary (rvalue) object without deep copying|Lock a mutex during assignment|Serialize objects to disk|2
+What is the Rule of Three in C++?|If a class needs a custom destructor, copy constructor, or copy assignment operator, it likely needs all three|Every class must have three constructors|A function can have at most three parameters|Templates support three type arguments|1
+What is a `namespace` used for in C++?|Managing thread pools|Preventing name collisions across large codebases or libraries|Encrypting source files|Optimizing loop unrolling|2
+Which operator accesses a member through a pointer to an object?|.|->|::|.*|2
+What is the scope resolution operator in C++?|->|::|?:|&&|2
+What does the `static` keyword mean inside a function for a local variable?|The variable is stored on the stack and reset every call|The variable persists for the lifetime of the program and retains its value across calls|The variable becomes global to all translation units|The variable cannot be read|2
+What does the `static` keyword mean on a class member function?|It can only access non-static member variables|It belongs to the class itself and can be called without an object instance|It cannot be called outside derived classes|It is automatically virtual|2
+What is a `friend` function in a class?|A member function inherited by all subclasses|A non-member function granted access to private and protected members of the class|A thread-safe callback function|A template specialization|2
+Which cast performs safe downcasting with runtime type checking for polymorphic types?|static_cast|reinterpret_cast|dynamic_cast|const_cast|3
+Which cast removes `const` or `volatile` qualifiers from a type?|static_cast|dynamic_cast|const_cast|reinterpret_cast|3
+Which STL algorithm searches for an element in a sorted range using binary search?|std::find|std::binary_search|std::count|std::replace|2
+Which STL container provides fast insertion and deletion at both ends (`front` and `back`)?|array|deque|forward_list|set|2
+What is an iterator in C++?|A raw integer index only|An object pointing to elements in a container that supports pointer-like traversal|A preprocessor macro for loops|A garbage collector thread|2
+Which header defines `std::string`?|cstring|string|sstream|cctype|2
+What does `std::vector::push_back()` do?|Removes the last element|Appends a new element to the end of the vector|Inserts an element at index 0|Clears all elements|2
+What is the difference between `size()` and `capacity()` on a `std::vector`?|They are always identical|Number of stored elements vs. total allocated storage before reallocation|Total bytes used vs. element count|Max elements allowed vs. current index|2
+Which C++ feature allows a class to inherit from more than one base class?|Single inheritance|Multiple inheritance|Operator overloading|Function hiding|2
+What problem does virtual inheritance solve in multiple inheritance?|Memory leaks|The diamond problem (ambiguous base subobjects)|Dangling pointers|Integer overflow|2
+Which keyword is used for preprocessor macros and conditional compilation?|#define|#pragma|#include|All of #define, #pragma, and #include|4
+What is a `struct` vs a `class` default member access in C++?|`struct` defaults to `private`, `class` to `public`|`struct` defaults to `public`, `class` to `private`|Both default to `protected`|Structs cannot have member functions|2
+What does `std::move(x)` actually do?|Moves memory across threads immediately|Casts `x` to an rvalue reference to enable move semantics|Deletes `x` from memory|Copies `x` into a vector|2
+Which header provides `std::sort` and `std::find` alongside other standard algorithms?|algorithm|numeric|vector|array|1
+Which C++ standard introduced `std::optional`, `std::variant`, and `std::string_view`?|C++98|C++11|C++17|C++20|3
+Which C++20 feature constrains template parameters using named compile-time predicates?|Concepts|Modules|Coroutines|All of Concepts, Modules, and Coroutines|4
+Which RAII class in `<mutex>` automatically unlocks a mutex when going out of scope?|std::thread|std::lock_guard|std::atomic|std::future|2
+What does RAII stand for in C++?|Random Access Iterator Interface|Resource Acquisition Is Initialization|Runtime Allocation and Indexing|Recursive Array Initialization|2
