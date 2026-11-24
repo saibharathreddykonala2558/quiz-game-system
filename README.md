@@ -2,6 +2,10 @@
 
 A console quiz game that loads questions from a text file, tracks your score, and saves results to a leaderboard.
 
+## Live Demo
+
+[Play the C++ Quiz Game](https://saibharathreddykonala2558.github.io/quiz-game-system/)
+
 ## Files
 
 - `quiz_game.cpp` - the full source code
