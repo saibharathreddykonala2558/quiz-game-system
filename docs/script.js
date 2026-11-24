@@ -548,6 +548,456 @@ const questions = [
       "Recursive Array Initialization"
     ],
     "answer": 1
+  },
+  {
+    "question": "What does `std::cin` use to separate inputs by default?",
+    "options": [
+      "Whitespace (spaces, tabs, newlines)",
+      "Commas only",
+      "Semicolons only",
+      "Periods only"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which header provides input/output stream manipulators like `std::setw` and `std::setprecision`?",
+    "options": [
+      "iomanip",
+      "iosfwd",
+      "istream",
+      "sstream"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does `std::stringstream` allow you to do?",
+    "options": [
+      "Perform in-memory string parsing and formatting like a stream",
+      "Encrypt strings automatically",
+      "Sort strings in place",
+      "Convert integers to pointers"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which keyword is used to declare a constant expression evaluated at compile time when possible?",
+    "options": [
+      "constexpr",
+      "mutable",
+      "volatile",
+      "extern"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does the `mutable` keyword allow inside a `const` member function?",
+    "options": [
+      "Modifying that specific member variable",
+      "Calling non-const base functions",
+      "Bypassing access specifiers",
+      "Deleting `this`"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does the `volatile` keyword tell the compiler?",
+    "options": [
+      "Value may change outside program control, so do not over-optimize reads/writes",
+      "Variable is stored in CPU cache forever",
+      "Variable is read-only at runtime",
+      "Variable is shared across networks"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which keyword specifies external linkage for a variable or function declared in another translation unit?",
+    "options": [
+      "extern",
+      "inline",
+      "friend",
+      "using"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does an `inline` function suggest to the compiler?",
+    "options": [
+      "Substitute the function body at the call site to avoid call overhead",
+      "Execute the function on a separate thread",
+      "Make the function private",
+      "Throw an exception on overflow"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which operator is known as the ternary conditional operator in C++?",
+    "options": [
+      "?:",
+      "::",
+      ".*",
+      "sizeof"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does the `sizeof` operator return at compile time?",
+    "options": [
+      "Size of a type or expression in bytes",
+      "Number of elements in any pointer",
+      "Heap capacity of a `std::vector`",
+      "Number of lines in a file"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which operator checks whether a value is an instance of a type at runtime on polymorphic classes?",
+    "options": [
+      "`dynamic_cast` with a pointer/reference",
+      "`typeid` operator",
+      "`alignof` operator",
+      "`noexcept` operator"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What does `noexcept` on a function indicate in C++11?",
+    "options": [
+      "The function guarantees it will not throw exceptions",
+      "The function cannot be called recursively",
+      "The function returns `void`",
+      "The function is pure virtual"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is a dangling pointer?",
+    "options": [
+      "A pointer referencing memory that has already been freed or gone out of scope",
+      "A null pointer initialized to `nullptr`",
+      "A pointer to a constant integer",
+      "A function pointer"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is a memory leak?",
+    "options": [
+      "Failing to release dynamically allocated memory when no longer needed",
+      "Reading past the end of a stack array",
+      "Dividing an integer by zero",
+      "Using an uninitialized `bool`"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which C++11 smart pointer holds a non-owning reference to an object managed by `std::shared_ptr`?",
+    "options": [
+      "`std::weak_ptr`",
+      "`std::unique_ptr`",
+      "`std::scoped_lock`",
+      "`std::any`"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "How do you safely access the object pointed to by a `std::weak_ptr`?",
+    "options": [
+      "Call `.lock()` to get a temporary `std::shared_ptr`",
+      "Dereference it directly with `*wp`",
+      "Cast it with `static_cast`",
+      "Call `.release()`"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which STL container is implemented as a doubly linked list?",
+    "options": [
+      "std::list",
+      "std::vector",
+      "std::array",
+      "std::deque"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which STL container is implemented as a singly linked list?",
+    "options": [
+      "std::forward_list",
+      "std::list",
+      "std::set",
+      "std::map"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which STL container provides hash-table-based average O(1) lookup for unique keys?",
+    "options": [
+      "std::unordered_set",
+      "std::set",
+      "std::multimap",
+      "std::priority_queue"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which STL container adaptor extracts the largest (by default) element first?",
+    "options": [
+      "std::priority_queue",
+      "std::queue",
+      "std::stack",
+      "std::deque"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which header provides `std::sort`, `std::find`, `std::count_if`, and `std::transform`?",
+    "options": [
+      "algorithm",
+      "numeric",
+      "cmath",
+      "functional"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which header provides numeric algorithms like `std::accumulate` and `std::iota`?",
+    "options": [
+      "numeric",
+      "algorithm",
+      "limits",
+      "random"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does `std::vector::clear()` do to `size()` and `capacity()`?",
+    "options": [
+      "Sets `size()` to 0 while keeping `capacity()` unchanged",
+      "Sets both `size()` and `capacity()` to 0",
+      "Doubles `capacity()` and clears elements",
+      "Deletes the `std::vector` object"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does `std::vector::shrink_to_fit()` request?",
+    "options": [
+      "Reducing `capacity()` to match `size()`",
+      "Sorting elements in ascending order",
+      "Removing duplicate values",
+      "Reserving 1,024 elements"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which C++11 header provides pseudo-random number engines and distributions?",
+    "options": [
+      "random",
+      "cstdlib",
+      "ctime",
+      "chrono"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which C++11 header provides time utilities like `std::chrono::steady_clock`?",
+    "options": [
+      "chrono",
+      "ctime",
+      "time.h",
+      "thread"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which C++11 header provides `std::thread` for concurrent execution?",
+    "options": [
+      "thread",
+      "mutex",
+      "future",
+      "atomic"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which class in `<mutex>` locks multiple mutexes deadlock-free using a scoped lifetime?",
+    "options": [
+      "std::scoped_lock (C++17)",
+      "std::atomic_flag",
+      "std::condition_variable",
+      "std::packaged_task"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does `std::atomic<int>` provide for shared counters across threads?",
+    "options": [
+      "Lock-free or atomic read-modify-write operations",
+      "Automatic garbage collection",
+      "Dynamic resizing",
+      "File locking"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is a template parameter pack (variadic template) used for?",
+    "options": [
+      "Accepting a variable number of template or function arguments",
+      "Compressing template binaries",
+      "Overloading `new` globally",
+      "Disabling copy constructors"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is partial template specialization?",
+    "options": [
+      "Providing a custom implementation for a subset of template arguments",
+      "Compiling only half of a template file",
+      "Using `#ifdef` inside a template",
+      "Inheriting from a template twice"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which C++17 vocabulary type holds either a value of type `T` or nothing (`std::nullopt`)?",
+    "options": [
+      "std::optional",
+      "std::variant",
+      "std::any",
+      "std::span"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which C++17 vocabulary type is a type-safe union holding one of several listed types?",
+    "options": [
+      "std::variant",
+      "std::optional",
+      "std::bitset",
+      "std::tuple"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which C++17 type provides a non-owning view of a contiguous character sequence?",
+    "options": [
+      "std::string_view",
+      "std::stringstream",
+      "std::regex",
+      "std::filesystem"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which C++17 header supports path manipulation, directory iteration, and file status queries?",
+    "options": [
+      "filesystem",
+      "fstream",
+      "ios",
+      "cstdio"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which C++20 type represents a non-owning view over a contiguous sequence of elements?",
+    "options": [
+      "std::span",
+      "std::array",
+      "std::valarray",
+      "std::initializer_list"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does a range-based `for` loop (`for (const auto& x : container)`) do?",
+    "options": [
+      "Iterates cleanly over every element in a range or container",
+      "Runs until a global flag becomes false",
+      "Sorts the container before looping",
+      "Allocates a new copy of every element on the heap"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the purpose of a virtual destructor in a base class?",
+    "options": [
+      "Ensures derived class destructors run when deleting through a base pointer",
+      "Prevents instantiation of the base class",
+      "Makes all member functions virtual",
+      "Speeds up object construction"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does `= delete` on a member function do in C++11?",
+    "options": [
+      "Explicitly disables calling or generating that function",
+      "Deallocates heap memory for the class",
+      "Marks the function as deprecated with a warning",
+      "Makes the function private"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does `= default` on a special member function do in C++11?",
+    "options": [
+      "Asks the compiler to generate the default implementation",
+      "Sets return value to zero",
+      "Makes the function virtual",
+      "Initializes all pointers to `nullptr`"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which operator is used to access a class member through a pointer-to-member?",
+    "options": [
+      "->* and .*",
+      ":: and ?:",
+      "<< and >>",
+      "&& and ||"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does `std::unique_ptr::release()` do?",
+    "options": [
+      "Relinquishes ownership and returns the raw pointer without deleting the object",
+      "Deletes the managed object and sets pointer to `nullptr`",
+      "Resets reference count to zero",
+      "Copies the pointer to another `unique_ptr`"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does `std::unique_ptr::reset()` do?",
+    "options": [
+      "Destroys the managed object (if any) and optionally takes a new pointer",
+      "Returns the raw pointer without destroying the object",
+      "Locks the pointer for thread safety",
+      "Converts it into a `std::shared_ptr`"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which header defines `std::numeric_limits` for inspecting type ranges and properties?",
+    "options": [
+      "limits",
+      "climits",
+      "cfloat",
+      "typeinfo"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the main advantage of `emplace_back()` over `push_back()` on a `std::vector`?",
+    "options": [
+      "Constructs the element in-place inside the container without an extra temporary copy/move",
+      "Always runs in O(1) without ever reallocating",
+      "Works only on primitive integers",
+      "Automatically sorts inserted elements"
+    ],
+    "answer": 0
   }
 ];
 
@@ -562,8 +1012,10 @@ const endBtn = document.getElementById("end-btn");
 const restartBtn = document.getElementById("restart-btn");
 const clearHistoryBtn = document.getElementById("clear-history-btn");
 const playerNameInput = document.getElementById("player-name");
+const quizLengthSelect = document.getElementById("quiz-length");
 const questionCount = document.getElementById("question-count");
 const scoreDisplay = document.getElementById("score-display");
+const timerDisplay = document.getElementById("timer-display");
 const progressFill = document.getElementById("progress-fill");
 const questionText = document.getElementById("question-text");
 const optionsContainer = document.getElementById("options-container");
@@ -573,6 +1025,7 @@ const resultMessage = document.getElementById("result-message");
 const historyList = document.getElementById("history-list");
 const reviewList = document.getElementById("review-list");
 
+let activeQuestions = [];
 let currentQuestion = 0;
 let score = 0;
 let answered = false;
@@ -580,6 +1033,24 @@ let questionsAnswered = 0;
 let quizActive = false;
 let resultSaved = false;
 let userAnswers = [];
+let timerInterval = null;
+let secondsRemaining = 0;
+
+function populateLengthOptions() {
+  quizLengthSelect.innerHTML = "";
+  const maxQuestions = Math.min(100, questions.length);
+
+  for (let count = 10; count <= maxQuestions; count += 5) {
+    const option = document.createElement("option");
+    option.value = count;
+    option.textContent = `${count} questions`;
+    quizLengthSelect.appendChild(option);
+  }
+
+  if (maxQuestions >= 10) {
+    quizLengthSelect.value = Math.min(20, maxQuestions);
+  }
+}
 
 function showScreen(screen) {
   [startScreen, questionScreen, resultScreen].forEach((item) => {
@@ -592,6 +1063,39 @@ function getPlayerName() {
   return playerNameInput.value.trim() || "Guest";
 }
 
+function formatTime(totalSeconds) {
+  const minutes = Math.floor(totalSeconds / 60).toString().padStart(2, "0");
+  const seconds = (totalSeconds % 60).toString().padStart(2, "0");
+  return `${minutes}:${seconds}`;
+}
+
+function startTimer(totalSeconds) {
+  stopTimer();
+  secondsRemaining = totalSeconds;
+  timerDisplay.textContent = `Time: ${formatTime(secondsRemaining)}`;
+
+  timerInterval = setInterval(() => {
+    secondsRemaining -= 1;
+
+    if (secondsRemaining <= 0) {
+      secondsRemaining = 0;
+      timerDisplay.textContent = "Time: 00:00";
+      stopTimer();
+      finishQuiz(false);
+      return;
+    }
+
+    timerDisplay.textContent = `Time: ${formatTime(secondsRemaining)}`;
+  }, 1000);
+}
+
+function stopTimer() {
+  if (timerInterval !== null) {
+    clearInterval(timerInterval);
+    timerInterval = null;
+  }
+}
+
 function startQuiz() {
   if (!playerNameInput.value.trim()) {
     playerNameInput.focus();
@@ -599,29 +1103,39 @@ function startQuiz() {
     return;
   }
 
+  const selectedCount = parseInt(quizLengthSelect.value, 10);
+
+  if (!selectedCount || selectedCount < 10) {
+    alert("Please select the number of questions.");
+    return;
+  }
+
+  activeQuestions = questions.slice(0, selectedCount);
   currentQuestion = 0;
   score = 0;
   answered = false;
   questionsAnswered = 0;
   quizActive = true;
   resultSaved = false;
-  userAnswers = new Array(questions.length).fill(null);
+  userAnswers = new Array(activeQuestions.length).fill(null);
+
   showScreen(questionScreen);
   renderQuestion();
+  startTimer(activeQuestions.length * 5);
 }
 
 function renderQuestion() {
-  const question = questions[currentQuestion];
+  const question = activeQuestions[currentQuestion];
   answered = false;
 
-  questionCount.textContent = `Question ${currentQuestion + 1} of ${questions.length}`;
+  questionCount.textContent = `Question ${currentQuestion + 1} of ${activeQuestions.length}`;
   scoreDisplay.textContent = `Score: ${score}`;
-  progressFill.style.width = `${((currentQuestion + 1) / questions.length) * 100}%`;
+  progressFill.style.width = `${((currentQuestion + 1) / activeQuestions.length) * 100}%`;
   questionText.textContent = question.question;
   feedback.textContent = "";
   feedback.className = "feedback";
   nextBtn.disabled = true;
-  nextBtn.textContent = currentQuestion === questions.length - 1 ? "See Results" : "Next Question";
+  nextBtn.textContent = currentQuestion === activeQuestions.length - 1 ? "See Results" : "Next Question";
 
   optionsContainer.innerHTML = "";
 
@@ -642,7 +1156,7 @@ function selectAnswer(selectedIndex, selectedButton) {
   questionsAnswered += 1;
   userAnswers[currentQuestion] = selectedIndex;
 
-  const question = questions[currentQuestion];
+  const question = activeQuestions[currentQuestion];
   const optionButtons = optionsContainer.querySelectorAll(".option-btn");
 
   optionButtons.forEach((button, index) => {
@@ -667,7 +1181,7 @@ function selectAnswer(selectedIndex, selectedButton) {
 }
 
 function nextQuestion() {
-  if (currentQuestion < questions.length - 1) {
+  if (currentQuestion < activeQuestions.length - 1) {
     currentQuestion += 1;
     renderQuestion();
   } else {
@@ -681,15 +1195,20 @@ function finishEarly() {
 }
 
 function finishQuiz(completed) {
+  if (!quizActive) return;
+
   quizActive = false;
-  const totalAnswered = completed ? questions.length : questionsAnswered;
+  stopTimer();
+
+  const totalAnswered = completed ? activeQuestions.length : questionsAnswered;
   const wrongAnswers = totalAnswered - score;
-  const unanswered = questions.length - totalAnswered;
+  const unanswered = activeQuestions.length - totalAnswered;
   const percentage = totalAnswered > 0 ? Math.round((score / totalAnswered) * 100) : 0;
+  const timeText = formatTime(secondsRemaining);
 
   showScreen(resultScreen);
   finalScore.textContent = `${score} / ${totalAnswered}`;
-  resultMessage.textContent = `You attempted ${totalAnswered} of ${questions.length} questions. Correct: ${score}. Wrong: ${wrongAnswers}. Unanswered: ${unanswered}. Score: ${percentage}%.`;
+  resultMessage.textContent = `You attempted ${totalAnswered} of ${activeQuestions.length} questions. Correct: ${score}. Wrong: ${wrongAnswers}. Unanswered: ${unanswered}. Score: ${percentage}%. Time remaining: ${timeText}.`;
 
   renderReview();
 
@@ -698,7 +1217,7 @@ function finishQuiz(completed) {
       name: getPlayerName(),
       score: score,
       answered: totalAnswered,
-      total: questions.length,
+      total: activeQuestions.length,
       percentage: percentage,
       date: new Date().toISOString()
     });
@@ -711,7 +1230,7 @@ function finishQuiz(completed) {
 function renderReview() {
   reviewList.innerHTML = "";
 
-  questions.forEach((question, index) => {
+  activeQuestions.forEach((question, index) => {
     const userAnswer = userAnswers[index];
     const isUnanswered = userAnswer === null;
     const isCorrect = userAnswer === question.answer;
@@ -809,4 +1328,5 @@ endBtn.addEventListener("click", finishEarly);
 restartBtn.addEventListener("click", restartQuiz);
 clearHistoryBtn.addEventListener("click", clearHistory);
 
+populateLengthOptions();
 renderHistory();

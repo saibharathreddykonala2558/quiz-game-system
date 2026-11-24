@@ -427,7 +427,8 @@ pre {
   text-transform: uppercase;
 }
 
-.name-field input {
+.name-field input,
+.name-field select {
   width: 100%;
   padding: 14px 16px;
   border: 1px solid var(--line);
@@ -439,7 +440,8 @@ pre {
   transition: border-color 0.2s ease;
 }
 
-.name-field input:focus {
+.name-field input:focus,
+.name-field select:focus {
   border-color: var(--gold);
 }
 
@@ -447,10 +449,16 @@ pre {
   color: #6f6b63;
 }
 
+.name-field select option {
+  background: #0f1117;
+  color: var(--cream);
+}
+
 .quiz-topbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 16px;
+  gap: 12px 16px;
   margin-bottom: 16px;
   color: var(--muted);
   font-size: 0.74rem;
